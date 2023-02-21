@@ -7,7 +7,7 @@ var elDateOutput = document.getElementById("dateOutput");
 
 var startTime = new Date();
 
-elDateOutput.innerText = startTime.getDate() + "" + startTime.getMonth() + "  " + startTime.getFullYear();
+elDateOutput.innerText = startTime.getDate() + " ." + startTime.getMonth() + " . " + startTime.getFullYear();
 
 if(startTime.getHours() < 10) {
     elHourOutput.innerText = "0" + startTime.getHours();
