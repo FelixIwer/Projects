@@ -1,4 +1,6 @@
 window.onload = function() {
+
+    // Declaration
     const elColorChangeButton = document.getElementById("btnColorChange");
     const elColorResetButton = document.getElementById("btnColorReset");
     const elLastColorButton = document.getElementById("btnLastColor");
@@ -10,6 +12,7 @@ window.onload = function() {
 
     var oldRandomColor = "rgb(255,255,255)";
 
+    // Function for Random Color Button
     function colorChanger(){
         oldRandomColor = document.body.style.backgroundColor;
         elLastColorButton.style.background = oldRandomColor;
@@ -24,6 +27,7 @@ window.onload = function() {
         elColorNameP.textContent = "RGB ("+ x + "," + y + "," + z +")";
     }
 
+    // Reset Function
     function standardColor(){
         document.body.style.backgroundColor = "white";
         elColorNameP.textContent = "RGB (255,255,255)";
@@ -31,6 +35,7 @@ window.onload = function() {
         elLastColorButton.style.background = "white";
     }
 
+    // Save Last Color Function
     function getLastColor(){
         elLastColorButton.style.background = oldRandomColor;
         document.body.style.backgroundColor = oldRandomColor;
