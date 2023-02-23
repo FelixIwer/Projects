@@ -9,15 +9,21 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <div class="flex h-screen">    
+    <div class="flex h-screen">
         <div class="m-auto">
-            <p class="font-sans text-xl text-center mb-5" id="colorName"></p>
+            <div class="mb-6 pt-2 bg-gray-300 rounded">
+                <p class="font-semibold font-sans text-xl text-center pb-2" id="colorName">RGB (255,255,255)</p>
+            </div>
 
-            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" id="btnColorChange">
+            <button class="mr-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnColorChange">
                 Random
             </button>
 
-            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r" id="btnColorReset">
+            <button class="bg-white text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnLastColor">
+                Last Color
+            </button>
+
+            <button class="ml-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnColorReset">
                 Reset
             </button>
         </div>
