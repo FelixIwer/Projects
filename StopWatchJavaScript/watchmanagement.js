@@ -31,7 +31,7 @@ function timeCounter (){
     if(timeSec == 60){
         timeMin += 1;
         timeSec = 0;
-        elSecondCounter.innerText = 0;
+        elSecondCounter.innerText = "00";
         if(timeMin < 10){
             elMinuteCounter.innerText = "0" + timeMin;
         } else{

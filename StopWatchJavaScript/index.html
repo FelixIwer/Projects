@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopWatch Mini Project</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script type="text/javascript" src="watchmanagement.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>StopWatch</h1>
-    <p>
-        <span id="minuteCounter">00</span>
-        <span>:</span>
-        <span id="secondCounter">00</span>
-        <span>:</span>
-        <span id="msCounter">00</span>
-    </p>
-    <div id="buttonDiv">
-        <button id="startButton">Start</button>
-        <button id="stopButton" style="visibility:hidden">Stop</button>
-        <button id="resetButton" style="visibility:hidden">Reset</button>
+<body class="bg-black text-white text-center">
+    <div class="flex h-screen text-6xl">
+        <div class="m-auto">
+            <div class="mb-6 pb-4 border-4 border-solid border-green-700 rounded-3xl">
+                <h1>Stopwatch</h1>
+                <p>
+                    <span id="minuteCounter">00</span>
+                    <span>:</span>
+                    <span id="secondCounter">00</span>
+                    <span>:</span>
+                    <span id="msCounter">00</span>
+                </p>
+            </div>
+
+            <div class="text-3xl pt-2">
+                <button class="p-4 px-8 border-2 bg-green-700 rounded-full hover:bg-green-900" id="startButton">Start</button>
+                <button class="p-4 px-8 border-2 bg-red-600 rounded-full hover:bg-red-700" id="stopButton" style="visibility:hidden">Stop</button>
+                <button class="p-4 px-8 border-2 bg-orange-600 rounded-full hover:bg-orange-700" id="resetButton" style="visibility:hidden">Reset</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
