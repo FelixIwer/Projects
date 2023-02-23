@@ -1,6 +1,6 @@
 # Project Overview
 
-# Link to Github Pages
+### Click for Link to Github Pages
 
 ### [Javascript Clock](https://felixiwer.github.io/Projects/ClockJavaScript/)
 - Languages: JavaScript, Tailwind for Styling, (HTML)
