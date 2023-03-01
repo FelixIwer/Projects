@@ -9,23 +9,37 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+    <div class="relative">
+        <button class="absolute right-0 mr-24 mt-4 text-4xl" id="btnSaveFavo">&#129505</button>
+        <button class="absolute right-0 mr-8 mt-2 text-5xl font-black" style="visibility:hidden" id="btnBackToFavo">&#8634</button>
+        <p class="absolute right-0 mr-8 mt-20 px-2 pb-1 text-md text-right bg-gray-300 rounded" style="visibility:hidden" id="favColorName"></p>
+    </div>
     <div class="flex h-screen">
         <div class="m-auto">
             <div class="mb-6 pt-2 bg-gray-300 rounded">
                 <p class="font-semibold font-sans text-xl text-center pb-2" id="colorName">RGB (255,255,255)</p>
             </div>
 
-            <button class="mr-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnColorChange">
+            <button class="ml-24 mr-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnColorChange">
                 Random
             </button>
 
-            <button class="bg-white text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnLastColor">
+            <button class="ml-12 bg-white text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnLastColor">
                 Last Color
             </button>
 
-            <button class="ml-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnColorReset">
+            <button class="ml-16 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded border-2 border-solid border-black" id="btnColorReset">
                 Reset
             </button>
+            <div class="mt-20 -mb-32 border-2 border-solid border-black p-4 rounded bg-gray-300">
+                <p>
+                    &#129181 Click the "Random"-Button for generating a random rgb color.<br>
+                    &#129181 Click the "Last Color"-Button to get back to the last color.<br>
+                    &#129181 Click the "Reset"-Button to reset the color to white.<br>
+                    &#129181 Click the "Heart"-Button on the top right corner to save your favorite color. <br>
+                    &#129181 The "Arrow"-Button next to the Heart, will bring you back to your save favorite Color.
+                </p>
+            </div>
         </div>
     </div>
 
