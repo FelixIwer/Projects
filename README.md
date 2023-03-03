@@ -14,3 +14,7 @@
 ### [Javascript Color Switcher](https://felixiwer.github.io/Projects/ColorPickerJavaScript/)
 - Languages: JavaScript, Tailwind for Styling, (HTML)
 - Description: A Webpage that is generating random RGB Color for the Background, by clicking on a button. Using Math.random functions
+
+### [Javascript Number Counter](https://felixiwer.github.io/Projects/NumberCounter/)
+- Languages: JavaScript, Tailwind for Styling, (HTML)
+- Description: A Webpage with a number counter, increase or decrease this counter or choose your own number to calculate with.
